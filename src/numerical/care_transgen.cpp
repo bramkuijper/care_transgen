@@ -27,6 +27,8 @@ CareTransgen::CareTransgen(int argc, char **argv):
     ,maxs{0.0}
     ,td{0.0}
     ,se{0.0}
+    ,r_mother_brood{0.0}
+    ,r_mother_off{0.0}
     ,mmin{0.0}
     ,base{}
     ,u{0.0,0.0}
@@ -59,7 +61,7 @@ CareTransgen::CareTransgen(int argc, char **argv):
         mtplus1[mHL] = m[mHL] + eul * selgrad_mHL();
         mtplus1[mLL] = m[mLL] + eul * selgrad_mLL();
 
-        assert(!isnan(btplus1[Lo]));
+        assert(!std::isnan(btplus1[Lo]));
 
         std::cout << u[Lo] << " " << u[Hi] << " " << btplus1[Lo] << std::endl;
         std::cout << u[Lo] << " " << u[Hi] << " " << btplus1[Hi] << std::endl;

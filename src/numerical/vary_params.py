@@ -25,6 +25,9 @@ lambda_val = 1.0
 
 b = [ 0.5, 0.3]
 
+r_mother_brood = 0.5
+r_mother_off = 0.5
+
 ctr = 0
 
 exe = "care_transgen.exe"
@@ -63,6 +66,8 @@ for c_i in c:
                                 + str(lambda_val) + " " \
                                 + space_str(b) + " " \
                                 + space_str(m) + " " \
+                                + str(r_mother_brood) + " " \
+                                + str(r_mother_off) + " " \
                                 + base_name + "_" + str(ctr))
 
                         ctr+=1
