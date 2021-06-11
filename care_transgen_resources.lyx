@@ -1,0 +1,228 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{doi}
+\usepackage{apjfonts}
+\usepackage[dvipsnames]{xcolor}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "citecolor=Blue,linkcolor=Blue,urlcolor=Blue"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Care when resources are transgenerational
+\end_layout
+
+\begin_layout Standard
+We modify the classical 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Houston1985"
+literal "false"
+
+\end_inset
+
+ game to accommodate for transfer of resources.
+ We assume that female and male breeders can either be of high or low early-life
+ quality, which depends on investment by their parents.
+ Specifically, fitnesses 
+\begin_inset Formula $W_{\mathrm{h}}$
+\end_inset
+
+ and 
+\begin_inset Formula $W_{\ell}$
+\end_inset
+
+ of high and low quality breeders is given by
+\begin_inset Formula 
+\begin{align}
+W_{\mathrm{h}} & =1-\mu\left(u_{\mathrm{h}}^{\mathrm{focal}}\right)+\frac{1}{2}\sum_{x=\{\ell,\mathrm{h}\}}\frac{v_{x}}{v_{\mathrm{h}}}w_{\mathrm{h}\rightarrow x}\left(u_{\mathrm{h}}^{\mathrm{focal}},\mathbf{u}^{\mathrm{local}},\mathbf{u}^{\mathrm{pop}}\right)\label{eq:Wh}\\
+W_{\ell} & =1-\mu\left(u_{\mathrm{\ell}}^{\mathrm{focal}}\right)+\frac{1}{2}\sum_{x=\{\ell,\mathrm{h}\}}\frac{v_{x}}{v_{\mathrm{\ell}}}w_{\ell\rightarrow x}\left(u_{\mathrm{\ell}}^{\mathrm{focal}},\mathbf{u}^{\mathrm{local}},\mathbf{u}^{\mathrm{pop}}\right).\label{eq:Wl}
+\end{align}
+
+\end_inset
+
+The expected number 
+\begin_inset Formula $w_{\mathrm{h}\rightarrow\ell}(\cdot)$
+\end_inset
+
+ of mutant juvenile offspring of low parental quality (
+\begin_inset Formula $\ell$
+\end_inset
+
+) born from a high quality parent (
+\begin_inset Formula $\mathrm{h}$
+\end_inset
+
+) is given by
+\begin_inset Formula 
+\begin{align*}
+w_{\mathrm{h}\rightarrow\ell}\left(u_{\mathrm{h}}^{\mathrm{focal}},\mathbf{u}^{\mathrm{local}},\mathbf{u}^{\mathrm{pop}}\right) & =p_{\mathrm{h}}\frac{B\left(u_{\mathrm{h}}^{\mathrm{focal}},u_{\mathrm{h}}^{\mathrm{local}}\right)}{x_{\mathrm{hh}}}s\left(x_{\mathrm{hh}}\right)\left[1-q\left(x_{\mathrm{hh}}\right)\right]\left[\frac{1-d}{C\left(u_{\mathrm{h}}^{\mathrm{focal}},u_{\mathrm{h}}^{\mathrm{local}},\mathbf{u}^{\mathrm{pop}}\right)}\right.\\
+ & +\left.d\sum_{s_{1}=\{\ell,\mathrm{h}\}}\sum_{s_{2}=\{\ell,\mathrm{h}\}}p_{s_{1}s_{2}}\frac{1}{C\left(u_{s_{1}},u_{s_{2}},\mathbf{u}^{\mathrm{pop}}\right)}\right]\\
+ & +p_{\ell}\frac{B\left(u_{\mathrm{h}}^{\mathrm{focal}},u_{\ell}^{\mathrm{local}}\right)}{x_{\mathrm{h\ell}}}s\left(x_{\mathrm{h\ell}}\right)\left[1-q\left(x_{\mathrm{h\ell}}\right)\right]\left[\frac{1-d}{C\left(u_{\mathrm{h}}^{\mathrm{focal}},u_{\mathrm{\ell}}^{\mathrm{local}},\mathbf{u}^{\mathrm{pop}}\right)}\right.\\
+ & +\left.d\sum_{s_{1}=\{\ell,\mathrm{h}\}}\sum_{s_{2}=\{\ell,\mathrm{h}\}}p_{s_{1}s_{2}}\frac{1}{C\left(u_{s_{1}},u_{s_{2}},\mathbf{u}^{\mathrm{pop}}\right)}\right],
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $p_{\mathrm{h}}$
+\end_inset
+
+ reflects the probability that a parent mates with a high quality parent
+\end_layout
+
+\begin_layout Standard
+Here, 
+\begin_inset Formula $C\left(u_{x}^{\mathrm{focal}},u_{y}^{\mathrm{local}},\mathbf{u}^{\mathrm{pop}}\right)$
+\end_inset
+
+ reflects the competition function between offspring born in the brood of
+ a focal (who is in state 
+\begin_inset Formula $x\in\{\text{h},\ell\}$
+\end_inset
+
+) and her local partner (who is in state 
+\begin_inset Formula $y\in\{\text{h},\ell\}$
+\end_inset
+
+).
+ We then have
+\begin_inset Formula 
+\begin{align*}
+C\left(u_{x}^{\mathrm{focal}},u_{x}^{\mathrm{local}},\mathbf{u}^{\mathrm{pop}}\right) & =\frac{B\left(u_{x}^{\mathrm{focal}},u_{y}^{\mathrm{local}}\right)}{x_{xy}}s\left(x_{xy}\right)\left(1-d\right)\\
+ & +d\sum_{s_{1}=\{\ell,\mathrm{h}\}}\sum_{s_{2}=\{\ell,\mathrm{h}\}}p_{s_{1}s_{2}}\frac{B\left(u_{s_{1}},u_{s_{2}}\right)}{x_{s_{1}s_{2}}}s\left(x_{s_{1}s_{2}}\right).
+\end{align*}
+
+\end_inset
+
+The other transition probabilities 
+\begin_inset Formula $w_{\mathrm{h}\rightarrow\mathrm{h}},$
+\end_inset
+
+ 
+\begin_inset Formula $w_{\mathrm{\ell\rightarrow\mathrm{h}}}$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{\ell\rightarrow\ell}$
+\end_inset
+
+ can be calculated in the same fashion.
+ 
+\end_layout
+
+\begin_layout Standard
+Consequently, our population dynamic translating population size from one
+ timestep to the next is given 
+\begin_inset Formula 
+\begin{align*}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+w
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "../databases/transgenerational"
+options "bram"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
